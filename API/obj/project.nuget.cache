@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "mjPs11fqiTGEtUgpJXBvR5TDvkeyseEJ0+4b7Y17RWXcX1P6H4sawNpqzCb9T8dbWkie17/8UEdwK4jQQQ5vUQ==",
+  "dgSpecHash": "IbVjT0lRb0yzzq/LGf0cS680dUyAOHcK9OM+hHGqQss0DiTuengTjdkX2cwyhbB5taKeRC3OZgDFYcWmZOx0JA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZEUS\\Desktop\\skinet\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ZEUS\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\ZEUS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\ZEUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\ZEUS\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ZEUS\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.1\\microsoft.data.sqlite.core.6.0.1.nupkg.sha512",
     "C:\\Users\\ZEUS\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\ZEUS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",

@@ -43,7 +43,6 @@ namespace API.Controllers
 
             var products = await _productsRepo.ListAsync(spec);
 
-            return Ok(_mapper.Map<IReadOnlyList<ProductToReturnDto>>(products));
             var data = _mapper.Map<IReadOnlyList<ProductToReturnDto>>(products);
 
             return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, 

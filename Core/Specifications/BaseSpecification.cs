@@ -1,21 +1,18 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace Core.Specifications
 {
-    public class BaseSpecification<T> : ISpecification<T>
+    public class BaseSpecifcation<T> : ISpecification<T>
     {
-        public BaseSpecification(Expression<Func<T, bool>> criteria)
+        public BaseSpecifcation()
+        {
+        }
+
+        public BaseSpecifcation(Expression<Func<T, bool>> criteria)
         {
             Criteria = criteria;
-
-        }
-        public BaseSpecification()
-        {
-
         }
 
         public Expression<Func<T, bool>> Criteria { get; }
@@ -25,13 +22,12 @@ namespace Core.Specifications
         public Expression<Func<T, object>> OrderBy { get; private set; }
 
         public Expression<Func<T, object>> OrderByDescending { get; private set; }
-        
+
         public int Take { get; private set; }
 
         public int Skip { get; private set; }
 
         public bool IsPagingEnabled { get; private set; }
-
 
         protected void AddInclude(Expression<Func<T, object>> includeExpression)
         {

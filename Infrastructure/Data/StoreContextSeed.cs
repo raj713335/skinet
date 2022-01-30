@@ -1,11 +1,11 @@
 using System;
-using System.IO;
-using System.Text.Json;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
 using Core.Entities;
+using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Data
 {

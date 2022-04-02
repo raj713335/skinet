@@ -8,45 +8,44 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./test-error.component.scss']
 })
 export class TestErrorComponent implements OnInit {
+  baseUrl = environment.apiUrl;
+  validationErrors: any;
 
   constructor(private http: HttpClient) { }
-
-  baseUrl = environment.apiUrl;
 
   ngOnInit(): void {
   }
 
-  get404Error(){
-    this.http.get(this.baseUrl+ 'products/42').subscribe(response =>{
-      console.log(response)
+  get404Error() {
+    this.http.get(this.baseUrl + 'products/42').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
-
-  get500Error(){
-    this.http.get(this.baseUrl+ 'buggy/servererror').subscribe(response =>{
-      console.log(response)
+  get500Error() {
+    this.http.get(this.baseUrl + 'buggy/servererror').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
-  get400Error(){
-    this.http.get(this.baseUrl+ 'buggy/badrequest').subscribe(response =>{
-      console.log(response)
+  get400Error() {
+    this.http.get(this.baseUrl + 'buggy/badrequest').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
     })
   }
 
-
-  get400ValidationError(){
-    this.http.get(this.baseUrl+ 'products/fourtytwo').subscribe(response =>{
-      console.log(response)
+  get400ValidationError() {
+    this.http.get(this.baseUrl + 'products/fortytwo').subscribe(response => {
+      console.log(response);
     }, error => {
       console.log(error);
+      this.validationErrors = error.errors;
     })
   }
 

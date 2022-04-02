@@ -1,5 +1,5 @@
-import { Component,  ElementRef, OnInit, ViewChild } from '@angular/core';
-import { IBrand } from '../shared/models/brands';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { IBrand } from '../shared/models/brand';
 import { IProduct } from '../shared/models/product';
 import { IType } from '../shared/models/productType';
 import { ShopParams } from '../shared/models/shopParams';
@@ -11,8 +11,7 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-
-  @ViewChild('search', {static: true}) searchTerm: ElementRef;
+  @ViewChild('search', {static: false}) searchTerm: ElementRef;
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
@@ -31,7 +30,7 @@ export class ShopComponent implements OnInit {
     this.getBrands();
     this.getTypes();
   }
-
+  
   getProducts() {
     this.shopService.getProducts(this.shopParams).subscribe(response => {
       this.products = response.data;
@@ -94,7 +93,5 @@ export class ShopComponent implements OnInit {
     this.shopParams = new ShopParams();
     this.getProducts();
   }
-
-
 
 }

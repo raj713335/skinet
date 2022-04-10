@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { BasketService } from './basket/basket.service';
+import { IPagination } from './shared/models/pagination';
+import { IProduct } from './shared/models/product';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +21,7 @@ export class AppComponent implements OnInit {
         console.log('initialised basket');
       }, error => {
         console.log(error);
-      });
+      })
     }
   }
 }

@@ -17,7 +17,7 @@ cd API
 dotnet watch run --skinet
 ```
 
-### 3. Run the Angular Frontend Application:
+### 3. Run the Angular(11.2.1) Frontend Application:
 
 ```
 cd skinet/client

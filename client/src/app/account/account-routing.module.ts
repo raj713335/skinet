@@ -5,9 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent}
-];
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }
+]
 
 @NgModule({
   declarations: [],
@@ -16,4 +16,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AccountRoutingModule { }
+export class AccountRoutingModule { } 

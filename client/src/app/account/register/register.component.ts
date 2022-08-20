@@ -23,9 +23,9 @@ export class RegisterComponent implements OnInit {
   createRegisterForm() {
     this.registerForm = this.fb.group({
       displayName: [null, [Validators.required]],
-      email: [null,
+      email: [null, 
         [Validators.required, Validators
-          .pattern('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$')],
+        .pattern('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$')],
         [this.validateEmailNotTaken()]
       ],
       password: [null, Validators.required]
@@ -50,7 +50,7 @@ export class RegisterComponent implements OnInit {
           }
           return this.accountService.checkEmailExists(control.value).pipe(
             map(res => {
-              return res ? { emailExists: true } : null;
+               return res ? {emailExists: true} : null;
             })
           );
         })

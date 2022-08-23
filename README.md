@@ -6,10 +6,17 @@ git clone https://github.com/raj713335/skinet
 
 ### 2. Run the .NET(5.0) Backend Application:
 
+## Dropping and running the SQLite Database
+
 ## Installing the Dot Net Tools
 
 ```
 dotnet tool install --global dotnet-ef --version 6.0.8
+```
+
+```
+cd skinet
+dotnet ef database drop -p Infrastructure -s API -c StoreContext
 ```
 
 ```

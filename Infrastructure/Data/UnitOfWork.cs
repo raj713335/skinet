@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Threading.Tasks;
 using Core.Entities;
@@ -39,7 +39,7 @@ namespace Infrastructure.Data
                 _repositories.Add(type, repositoryInstance);
             }
 
-            return (IGenericRepository<TEntity>)_repositories[type];
+            return (IGenericRepository<TEntity>) _repositories[type];
         }
     }
 }

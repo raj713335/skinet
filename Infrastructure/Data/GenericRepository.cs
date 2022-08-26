@@ -15,6 +15,7 @@ namespace Infrastructure.Data
         {
             _context = context;
         }
+
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);

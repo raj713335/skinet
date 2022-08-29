@@ -116,9 +116,17 @@
               "target": "Package",
               "version": "[6.8.0, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.2.4, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.38.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
